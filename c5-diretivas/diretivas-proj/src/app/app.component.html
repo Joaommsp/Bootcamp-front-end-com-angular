@@ -1,0 +1,20 @@
+
+<app-comp-atributos>
+  <p>eu vim de fora</p>
+  <h2>eu também vim de fora</h2>
+</app-comp-atributos>
+
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
+
+<ng-template #anotherBlock>
+  <p>OLá sou um bloco secreto</p>
+</ng-template>
+
+
+<p>Lista module:</p>
+
+<app-input></app-input>
+<app-list-view></app-list-view>
+
+
+<router-outlet></router-outlet>
